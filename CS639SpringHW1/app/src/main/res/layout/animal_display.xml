@@ -4,20 +4,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/owner"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:visibility="visible">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/nik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="TextView"
-        tools:text="Assignment by Nikhil Kedia (nk20261n)" />
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="2dp"
+        android:text="@string/ownerdev" />
 
     <ImageView
+        android:id="@+id/birdimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nik"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="28dp"
+        android:clickable="true"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/bird" />
+
+    <ImageView
+        android:id="@+id/catimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/birdimg"
+        android:layout_below="@+id/birdimg"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/cat" />
+
+    <ImageView
+        android:id="@+id/dogimg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/catimg"
+        android:layout_below="@+id/catimg"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="false"
+        android:clickable="true"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        app:srcCompat="@drawable/dog" />
+
+    <TextView
+        android:id="@+id/birddesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:layout_alignTop="@+id/birdimg"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/birdimg"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:text="@string/birdinfo"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/catdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dogimg"
+        android:layout_alignEnd="@+id/birddesc"
+        android:layout_alignStart="@+id/birddesc"
+        android:layout_marginBottom="12dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:text="@string/catinfo"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/dogdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/catdesc"
+        android:layout_alignTop="@+id/dogimg"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="32dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:text="@string/doginfo"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/red"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/dogimg"
+        android:layout_below="@+id/dogimg"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="46dp"
+        android:background="#FF0000"
+        android:elevation="0dp"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/blue"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/red"
+        android:layout_alignBottom="@+id/red"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/red"
+        android:background="#0000FF"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/yellow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/blue"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/blue"
+        android:background="#FFFF00"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/green"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/yellow"
+        android:layout_alignBottom="@+id/yellow"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/yellow"
+        android:background="#00FF00"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/magenta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/green"
+        android:layout_alignBottom="@+id/green"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@+id/green"
+        android:background="#FF00FF"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/colors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dogimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:foregroundGravity="center_vertical|center_horizontal"
+        android:text="@string/choosecolor" />
 </RelativeLayout>

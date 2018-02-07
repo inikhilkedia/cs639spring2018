@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CS639SpringHW1</string>
+    <string name="ownerdev">Assignment by Nikhil Kedia (nk20261n)</string>
+    <string name="birdinfo">There are around 10000 different species of birds worldwide.</string>
+    <string name="catinfo">Your cat recognizes your voice but just acts too cool to care (probably because they are).</string>
+    <string name="doginfo">If a guy has a dog with him, he\'s three times more likely to get a girl\'s phone number.</string>
+    <string name="choosecolor">Choose a Color</string>
 </resources>
