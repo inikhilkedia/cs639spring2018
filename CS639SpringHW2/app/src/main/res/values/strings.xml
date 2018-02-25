@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CS639SpringHW2</string>
+    <string name="ownerdev">Assignment by Nikhil Kedia (nk20261n)</string>
+    <string name="choosecolor">Choose a Color</string>
 </resources>
